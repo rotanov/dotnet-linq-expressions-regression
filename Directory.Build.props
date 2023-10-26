@@ -1,0 +1,22 @@
+<Project>
+
+  <PropertyGroup>
+    <!-- <RunCodeAnalysis>false</RunCodeAnalysis> Disable legacy analyzers? -->
+    <DefineConstants>$(DefineConstants);$(Configuration.ToUpperInvariant().Replace('.', ';'))</DefineConstants>
+    <Deterministic>true</Deterministic>
+    <DeterministicSourcePaths>true</DeterministicSourcePaths>
+    <PathMap>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))=./</PathMap>
+    <RunAnalyzers>true</RunAnalyzers>
+    <RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
+    <RunAnalyzersDuringLiveAnalysis>true</RunAnalyzersDuringLiveAnalysis>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="$(Configuration.Contains('Tangerine'))">
+    <DefineConstants>$(DefineConstants);PROFILER</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="$(Configuration.Contains('Release'))">
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,27 @@
+<Project>
+
+  <Target Name="DebugCsproj" AfterTargets="Build">
+    <Message Text="[Debug][$(ProjectName)] ProjectPath: $(ProjectPath)" Importance="high" />
+    <Message Text="[Debug][$(ProjectName)] Configuration: $(Configuration)" Importance="high" />
+    <Message Text="[Debug][$(ProjectName)] Defines: $(DefineConstants)" Importance="high" />
+    <Message Text="[Debug][$(ProjectName)] OS: $(OS)" Importance="high" />
+    <Message Text="[Debug][$(ProjectName)] Optimize: $(Optimize)" Importance="high" />
+    <Message Text="[Debug][$(ProjectName)] Deterministic: $(Deterministic)" Importance="high" />
+    <Message Text="[Debug][$(ProjectName)] LangVersion: $(LangVersion)" Importance="high" />
+    <Message Text="[Debug][$(ProjectName)] TargetFrameworks: $(TargetFrameworks)" Importance="high" />
+    <Message Text="[Debug][$(ProjectName)] TargetFramework: $(TargetFramework)" Importance="high" />
+    <Message Text="[Debug][$(ProjectName)] RuntimeIdentifiers: $(RuntimeIdentifiers)" Importance="high" />
+    <Message Text="[Debug][$(ProjectName)] RuntimeIdentifier: $(RuntimeIdentifier)" Importance="high" />
+    <Message Text="[Debug][$(ProjectName)] MtouchFastDev: $(MtouchFastDev)" Importance="high" />
+    <Message Text="[Debug][$(ProjectName)] MtouchHttpClientHandler: $(MtouchHttpClientHandler)" Importance="high" />
+    <Message Text="[Debug][$(ProjectName)] _LinkMode: $(_LinkMode)" Importance="high" />
+    <Message Text="[Debug][$(ProjectName)] MtouchUseLlvm: $(MtouchUseLlvm)" Importance="high" />
+    <Message Text="[Debug][$(ProjectName)] MtouchFloat32: $(MtouchFloat32)" Importance="high" />
+    <Message Text="[Debug][$(ProjectName)] MtouchUseThumb: $(MtouchUseThumb)" Importance="high" />
+    <Message Text="[Debug][$(ProjectName)] MtouchEnableBitcode: $(MtouchEnableBitcode)" Importance="high" />
+    <Message Text="[Debug][$(ProjectName)] EnableSGenConc: $(EnableSGenConc)" Importance="high" />
+    <Message Text="[Debug][$(ProjectName)] MtouchInterpreter: $(MtouchInterpreter)" Importance="high" />
+    <Message Text="[Debug][$(ProjectName)] EnableSGenConc: $(EnableSGenConc)" Importance="high" />
+  </Target>
+
+</Project>
